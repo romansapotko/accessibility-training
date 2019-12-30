@@ -251,7 +251,7 @@
                     neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
                     viverra
                     nam.</p>
-                  <p><a>Learn more</a></p>
+                  <p><a href="#">Learn more</a></p>
                 </div>
               </div>
             </div>
@@ -287,7 +287,7 @@
                     dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
                     lacus
                     vel facilisis.</p>
-                  <p><a>Learn more</a></p>
+                  <p><a href="#">Learn more</a></p>
                 </div>
               </div>
             </div>
@@ -300,36 +300,35 @@
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
-            <div class="title">List of topics</div>
+            <div class="title" id="list-of-topics">List of topics</div>
             <div class="subtitle">We are always in touch we the outside world</div>
           </div>
         </div>
-        <div class="tabs is-boxed is-centered main-menu" id="nav" role="tablist" aria-label="List of tab elements" ta>
-          <ul>
-            <li data-target="pane-1" id="1" class="is-active" role="tab">
-              <a>
-                <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
-                <span id="pane-1-label">Pictures</span>
-              </a>
-            </li>
-            <li data-target="pane-3" id="3" role="tab">
-              <a>
-                <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
-                <span id="pane-3-label">Team</span>
-              </a>
-            </li>
-            <li data-target="pane-4" id="4" role="tab">
-              <a>
-                <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
-                <span id="pane-4-label">Video</span>
-              </a>
-            </li>
-          </ul>
+        <div class="tabs is-boxed is-centered main-menu" id="nav">
+          <div role="tablist" class="tab-list" aria-labelledby="list-of-topics" aria-orientation="horizontal">
+            <button data-target="pane-1" aria-controls="pane-1" id="tab1" class="tab-button" role="tab"
+              aria-selected="true" aria-labelledby="pane-1-label">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
+              <span id="pane-1-label">Pictures</span>
+            </button>
+            <button data-target="pane-3" aria-controls="pane-3" id="tab3" class="tab-button" role="tab"
+              aria-selected="false" tabindex="-1" aria-labelledby="pane-4-label">
+              <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
+              <span id="pane-3-label">Team</span>
+            </button>
+            <button data-target="pane-4" aria-controls="pane-4" id="tab4" class="tab-button" role="tab"
+              aria-selected="false" tabindex="-1" aria-labelledby="pane-4-label">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
+              <span id="pane-4-label">Video</span>
+
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="tab-content container">
-        <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="pane-1-label">
+        <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-labelledby="pane-1-label"
+          tabindex="0" hidden="">
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
@@ -395,7 +394,7 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="pane-3-label">
+        <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="pane-3-label" tabindex="0" hidden="">
           <div class="columns medias">
             <div class="column">
               <div class="media">
@@ -460,7 +459,7 @@
           </div>
         </div>
 
-        <div class="tab-pane" id="pane-4" aria-labelledby="pane-4-label">
+        <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="pane-4-label" tabindex="0" hidden="">
           <div class="columns is-centered">
             <div class="column is-three-quarters">
               <div class="title has-text-centered">Inspired video</div>
@@ -1012,7 +1011,7 @@
           </div>
 
           <div class="field">
-            <div class="control" role="checkbox">
+            <div class="control">
               <label class="checkbox" for="check-box">
                 <input type="checkbox" id="check-box">
                 I agree to the <a href="#">terms and conditions</a>
@@ -1201,7 +1200,7 @@
           <a href="#" aria-label="Go to Youtube"><i aria-hidden="true" class="fab fa-youtube fa-2x"></i></a>
           <a href="#" aria-label="Go to Facebook"><i aria-hidden="true" class="fab fa-facebook fa-2x"></i></a>
           <a href="#" aria-label="Go to Twitter"><i aria-hidden="true" class="fab fa-twitter fa-2x"></i></a>
-      </div>
+        </div>
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
     </div>

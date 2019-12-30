@@ -95,7 +95,7 @@
   overflow: hidden;
 }
 
-.skills-content .media + .media {
+.skills-content .media+.media {
   margin-top: 0.5rem;
 }
 
@@ -199,6 +199,7 @@ button:focus {
 .hero.is-info {
   background-color: #27389b;
 }
+
 .button.is-info:hover {
   background-color: #303d86;
 }
@@ -206,6 +207,7 @@ button:focus {
 .tag.is-danger {
   background-color: #a72c23 !important;
 }
+
 .tag.is-danger:hover {
   background-color: #913029;
 }
@@ -221,11 +223,33 @@ button:focus {
 
 .visuallyhidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabs.is-boxed .tab-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+  font-size: inherit;
+  padding: 10px 15px;
+}
+
+.tabs.is-boxed .tab-button.is-active,
+.tabs.is-boxed .tab-button.is-active:hover {
+  background: #fff;
+  color: #0a478e;
 }
